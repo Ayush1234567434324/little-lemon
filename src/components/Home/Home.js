@@ -2,9 +2,11 @@ import React from 'react';
 import "./Home.css";
 import { NavLink } from 'react-router-dom';
 import HeroImage from "../../assests/gourmet.jpg"
+import Specials from './Specials';
 
 const Home = () => {
   return (
+    <>
     <div className="hero-section-background">
         <div className="hero-section-container">
             <div className="section-left">
@@ -20,6 +22,8 @@ const Home = () => {
             </div>
         </div>
     </div>
+    <Specials/>
+    </>
   )
 }
 
